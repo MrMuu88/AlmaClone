@@ -3,7 +3,7 @@ import React from 'react'
 import { Card, Icon } from '@rneui/themed'
 
 export default function LoyaltyCard() {
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = React.useState(true);
     const [lightOn, setLightOn] = React.useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
