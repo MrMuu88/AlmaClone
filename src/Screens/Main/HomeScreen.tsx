@@ -4,7 +4,7 @@ import { colors } from '../../Styles/StyleSheet'
 import LoyaltyCard from '../../Components/Headers/HomeScreen/LoyaltyCard'
 import PharmacyCard from '../../Components/Headers/HomeScreen/PharmacyCard'
 import CouponsCard from '../../Components/Headers/HomeScreen/CouponsCard'
-import SalesCard from '../../Components/Headers/HomeScreen/SalesCard'
+import SalesCarousel from '../../Components/Headers/HomeScreen/SalesCarousel'
 import { Icon } from '@rneui/themed'
 
 
@@ -26,8 +26,13 @@ export default class HomeScreen extends Component {
           <Text style={{ fontSize:20,fontWeight:"bold", color:"#57A500"}}>Hűség kártya tudnivalók</Text>
         </View>
         <CouponsCard />
-        <Text style={{ color: colors.primary }}>Akciós Termékek</Text>
-        <SalesCard />
+        <View style={{ flexDirection: "row", marginTop:24, margin:8, gap:8}}>
+          <Text style={{ fontSize:20,fontWeight:"bold", color: colors.primary }}>Aciós termékek</Text>
+          <Text style={{ fontSize:20, color: colors.secondary }}>10</Text>
+          <Icon name="arrow-forward" color="#57A500"/>
+        </View>
+        <SalesCarousel />
+        <View style={{height:128}}/>
       </ScrollView>
     )
   }
