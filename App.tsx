@@ -2,7 +2,7 @@ import React, { Component, ReactNode } from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from './src/Screens/Main/HomeScreen';
 import PharmanciesScreen from './src/Screens/Main/PharmanciesScreen';
-import SalesScreen from './src/Screens/Main/SalesScreen';
+import {SalesScreen} from './src/Screens/Main/SalesScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import MainHeader from './src/Components/Headers/MainHeader';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -28,7 +28,7 @@ const Tabs = ()=>{
 
     const Tab = createBottomTabNavigator();
     return (
-        <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{height:72,paddingBottom:16}}} initialRouteName='Coupon'>
+        <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{height:72,paddingBottom:16}}} initialRouteName='Sales'>
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Home"]}}} name="Home" component={HomeScreen} />
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Coupon"]}}} name="Coupon" component={CouponScreen} />
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Sales"]}}} name="Sales" component={SalesScreen} />

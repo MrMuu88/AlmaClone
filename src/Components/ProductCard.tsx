@@ -26,7 +26,7 @@ export default function ProductCard(props:ProductCardProps) {
     };
 
   return (
-    <Card containerStyle={{width:"48%", margin:4, borderRadius:4}} wrapperStyle={{position:"relative"}}>
+    <Card containerStyle={{flex:1, minWidth:"40%", margin:4, borderRadius:4}} wrapperStyle={{position:"relative"}}>
         <Image style={{height:160, width:"auto", resizeMode:"contain",}} source={imageMap[props.product.id]}/>
         <View style={{position:"absolute", top:0, right:0}}>
             <Icon name={isFavorited?"heart":"heart-outlined"} type="entypo" onPress={()=> setIsfavorited(!isFavorited)} />
