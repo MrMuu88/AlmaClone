@@ -23,7 +23,7 @@ export const CouponScreen = () => {
 
       </View>
       <ScrollView>
-        { coupons.map(coupon => <CouponCard coupon={coupon} />)}
+        { coupons.map((coupon,i) => <CouponCard key={i} coupon={coupon} />)}
         <View style={{height:200}}/>
       </ScrollView>
     </View>
