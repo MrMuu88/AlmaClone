@@ -3,7 +3,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from './src/Screens/Main/HomeScreen';
 import PharmanciesScreen from './src/Screens/Main/PharmanciesScreen';
 import SalesScreen from './src/Screens/Main/SalesScreen';
-import CouponScreen from './src/Screens/Main/CouponScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import MainHeader from './src/Components/Headers/MainHeader';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -12,6 +11,7 @@ import { MenuScreen } from './src/Screens/Menu/MenuScreen';
 import { MessagesHeader } from './src/Components/Headers/MessagesHeader';
 import { MenuHeader } from './src/Components/Headers/MenuHeader';
 import { Image, StyleSheet } from 'react-native';
+import { CouponScreen } from './src/Screens/Main/CouponScreen';
 
 type NodeDictionary = {
     [key: string]: ReactNode;
@@ -28,7 +28,7 @@ const Tabs = ()=>{
 
     const Tab = createBottomTabNavigator();
     return (
-        <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{height:72,paddingBottom:16}}}>
+        <Tab.Navigator screenOptions={{headerShown:false, tabBarStyle:{height:72,paddingBottom:16}}} initialRouteName='Coupon'>
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Home"]}}} name="Home" component={HomeScreen} />
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Coupon"]}}} name="Coupon" component={CouponScreen} />
             <Tab.Screen options={{tabBarIcon:()=>{ return Icons["Sales"]}}} name="Sales" component={SalesScreen} />
@@ -44,7 +44,7 @@ export default function App() {
 
     return (
         <NavigationContainer>
-            <rootStack.Navigator screenOptions={{header:MainHeader}}>
+            <rootStack.Navigator screenOptions={{header:MainHeader}} initialRouteName='Tabs'>
                 <rootStack.Screen name="Tabs" component={Tabs} />
                 <rootStack.Screen options={{header:MessagesHeader}} name="Messages" component={MessagesScreen} />
                 <rootStack.Screen options={{header:MenuHeader}} name="Menu" component={MenuScreen} />

@@ -1,14 +1,28 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
-import {colors} from '../../Styles/StyleSheet'
+import { Switch, Text, View } from 'react-native'
+import React, { Component, useState } from 'react'
+import { colors } from '../../Styles/StyleSheet'
+import { ScrollView } from 'react-native-gesture-handler'
+import CouponCard from '../../Components/CouponCard'
 
 
-export default class CouponScreen extends Component {
-  render() {
-    return (
-      <View>
-        <Text style={{color:colors.primary}}>CouponScreen</Text>
+
+export const CouponScreen = () => {
+
+  const [checked, setChecked] = useState(false);
+
+  return (
+    <View>
+      <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", margin: 8, padding: 8 }}>
+        <Text style={{ color: colors.primary, fontWeight: "bold" }}>5 Kupon</Text>
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <Text style={{ color: colors.primary }}>A Kedvenc Patikámban</Text>
+          <Switch trackColor={{false:colors.secondary}} value={checked} onValueChange={setChecked}  />
+        </View>
+
       </View>
-    )
-  }
+      <ScrollView>
+        <CouponCard/>
+      </ScrollView>
+    </View>
+  )
 }
