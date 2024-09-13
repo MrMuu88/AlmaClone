@@ -8,6 +8,8 @@ import CouponCard from '../../Components/CouponCard'
 
 export const CouponScreen = () => {
 
+  const coupons = require("../../assests/coupons.json") as Coupon[];
+
   const [checked, setChecked] = useState(false);
 
   return (
@@ -21,7 +23,8 @@ export const CouponScreen = () => {
 
       </View>
       <ScrollView>
-        <CouponCard/>
+        { coupons.map(coupon => <CouponCard coupon={coupon} />)}
+        <View style={{height:200}}/>
       </ScrollView>
     </View>
   )

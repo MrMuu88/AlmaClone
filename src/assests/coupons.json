@@ -1,0 +1,47 @@
+[
+    {
+        "primaryColor": "#57325E",
+        "secondaryColor": "#E6983E",
+        "salePeriod": "2024. szeptember 1 - 15.",
+        "discount": "-10%",
+        "usage": "egyszer felhasználható",
+        "name": "BEBA Optipro 3 Junior tejalapú anyatej-kiegészítő tápszer 12. hó+ 600 g",
+        "image": "1"
+    },
+    {
+        "primaryColor": "#4082BE",
+        "secondaryColor": "#E6983E",
+        "salePeriod": "2024. szeptember 1 - 15.",
+        "discount": "-10%",
+        "usage": "egyszer felhasználható",
+        "name": "Movex 1500mg belsőleges oldathoz por 60x",
+        "image": "2"
+    },
+    {
+        "primaryColor": "#57325E",
+        "secondaryColor": "#E6983E",
+        "salePeriod": "2024. szeptember 1 - 15.",
+        "discount": "-10%",
+        "usage": "egyszer felhasználható",
+        "name": "Biomed Fekete nadálytő Krém FORTE 60 g",
+        "image": "3"
+    },
+    {
+        "primaryColor": "#68C300",
+        "secondaryColor": "#E6983E",
+        "salePeriod": "2024. szeptember 1 - 15.",
+        "discount": "-10%",
+        "usage": "egyszer felhasználható",
+        "name": "Apetister junior feketeribizlilé koncentrátumot, növényi kivonatokat és vitaminokat tartalmazó étrend-kiegészítő oldat, 100 ml",
+        "image": "4"
+    },
+    {
+        "primaryColor": "#68C300",
+        "secondaryColor": "#E6983E",
+        "salePeriod": "2024. szeptember 1 - 15.",
+        "discount": "-10%",
+        "usage": "egyszer felhasználható",
+        "name": "Apetister SENIOR feketeribizlilé koncentrátumot, növényi kivonatokat és vitaminokat tartalmazó étrend-kiegészítő oldat, 100 ml",
+        "image": "5"
+    }
+]
