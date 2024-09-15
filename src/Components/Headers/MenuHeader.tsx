@@ -12,14 +12,14 @@ export const MenuHeader = (props: StackHeaderProps) => {
                 <Image source={require('../../assests/icons/Alma+logo_small.png')} style={styles.logo} />
             </View>
             <TouchableOpacity style={{ justifyContent: "center"}} onPress={() => props.navigation.goBack()}>
-                <Icon name="close" size={36} />
+                <Icon name="close" size={36} color="#57A500" />
             </TouchableOpacity>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
-    container: { flexDirection: "row", alignContent: "center", margin: 8, padding: 8 },
+    container: { flexDirection: "row", alignContent: "center", padding: 16, backgroundColor:"#282828"},
     logo: { width: 32, height: 32, resizeMode: "contain" },
     close: { width: 16, height: 16, resizeMode: "contain"},
     title: { fontSize: 20, fontWeight: "bold", color: colors.primary, alignSelf: "center" }
