@@ -37,13 +37,13 @@ export const SalesScreen = () => {
           
 
         </View>
-        <View style={{ flexDirection: "row", alignItems:"center", justifyContent:"space-between", margin: 8 }}>
+        <View style={{ flexDirection: "row", alignItems:"center", justifyContent:"space-between", margin: 8}}>
           <Text style = {{color:"black"}}>10 Termék</Text>
           <TouchableOpacity style={{backgroundColor:"white",borderRadius:16, paddingHorizontal:8}}>
             <Icon name="filter-list" />
           </TouchableOpacity>
         </View>
-        <View style={{flexDirection:"row", flexWrap:"wrap"}}> 
+        <View style={{flexDirection:"row", flexWrap:"wrap", padding:8}}> 
         {
           products.map((e,i) => <ProductCard key={i} product={e} />)
         }
