@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { colors } from '../../Styles/StyleSheet';
 import { StackHeaderProps } from '@react-navigation/stack';
+import { Icon } from '@rneui/themed';
 
 
 export const MenuHeader = (props: StackHeaderProps) => {
@@ -11,7 +12,7 @@ export const MenuHeader = (props: StackHeaderProps) => {
                 <Image source={require('../../assests/icons/Alma+logo_small.png')} style={styles.logo} />
             </View>
             <TouchableOpacity style={{ justifyContent: "center"}} onPress={() => props.navigation.goBack()}>
-                <Image style={styles.close} source={require('../../assests/icons/020-close.png')} />
+                <Icon name="close" size={36} />
             </TouchableOpacity>
         </View>
     )

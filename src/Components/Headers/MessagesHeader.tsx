@@ -2,12 +2,13 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { colors } from '../../Styles/StyleSheet';
 import { StackHeaderProps } from '@react-navigation/stack';
+import { Icon } from '@rneui/themed';
 
 export const MessagesHeader = (props : StackHeaderProps) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={()=> props.navigation.goBack()}>
-                <Image style={styles.logo} source={require('../../assests/icons/017-arrow.png')} />
+                <Icon name="arrow-forward" size={36} />
             </TouchableOpacity>
             <View style={{flex:1, justifyContent:"center"}}>
                 <Text style={styles.title}>Üzenetek</Text>

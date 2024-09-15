@@ -37,7 +37,7 @@ export default function ProductCard(props:ProductCardProps) {
         <Text style={{color:"#57A500", fontWeight:"bold"}}>Hűségkártyával</Text>
         <View style={{flexDirection:"row", justifyContent:"space-between"}}>
             <Text style={{fontWeight:"bold",fontSize:32}}>{props.product.salePrice}</Text>
-            <Text style={{fontWeight:"bold", color:"green", fontSize:32, transform:[{rotate:"-45deg"}]}}>{props.product.discount}</Text>
+            <Text style={{fontWeight:"bold", color:"#57A500", fontSize:32, transform:[{rotate:"-45deg"}]}}>{props.product.discount}</Text>
         </View>
         <Text>{props.product.unitPrice}</Text>
         <View style={styles.divider}/>

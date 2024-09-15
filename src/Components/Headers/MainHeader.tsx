@@ -1,6 +1,7 @@
 import { View, Image, TouchableOpacity, StyleSheet, Alert } from 'react-native'
 import React from 'react'
 import { StackHeaderProps } from '@react-navigation/stack';
+import { Icon } from '@rneui/themed';
 
 
 
@@ -8,7 +9,7 @@ export default function MainHeader(props : StackHeaderProps) {
   return (
     <View style={styles.container}>
         <TouchableOpacity onPress={()=> props.navigation.navigate("Messages")}>
-          <Image source={require('../../assests/icons/009-bell.png')} style={styles.logo}/>
+          <Icon name="bell" type="material-community" color="#57A500" size={36} />
         </TouchableOpacity>
 
         <View>
@@ -17,7 +18,7 @@ export default function MainHeader(props : StackHeaderProps) {
 
         
         <TouchableOpacity onPress={()=> props.navigation.navigate("Menu")}>
-          <Image source={require('../../assests/icons/019-menu.png')} style={styles.logo}/>
+          <Icon name="menu" size={36}/>
         </TouchableOpacity>
       </View>
   )
