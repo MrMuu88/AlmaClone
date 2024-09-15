@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import { Card, Icon } from '@rneui/themed'
-import { colors } from '../../../Styles/StyleSheet'
+import { colors } from '../../Styles/StyleSheet'
 
 
 export default function PharmacyCard() {

@@ -1,10 +1,10 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { Component } from 'react'
 import { colors } from '../../Styles/StyleSheet'
-import LoyaltyCard from '../../Components/Headers/HomeScreen/LoyaltyCard'
-import PharmacyCard from '../../Components/Headers/HomeScreen/PharmacyCard'
-import CouponsCard from '../../Components/Headers/HomeScreen/CouponsCard'
-import SalesCarousel from '../../Components/Headers/HomeScreen/SalesCarousel'
+import LoyaltyCard from '../../Components/HomeScreen/LoyaltyCard'
+import PharmacyCard from '../../Components/HomeScreen/PharmacyCard'
+import CouponsCard from '../../Components/HomeScreen/CouponsCard'
+import SalesCarousel from '../../Components/HomeScreen/SalesCarousel'
 import { Icon } from '@rneui/themed'
 
 

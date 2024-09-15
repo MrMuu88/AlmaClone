@@ -23,7 +23,7 @@ export default function LoyaltyCard() {
                     <View style={styles.qrCodeContainer}>
                         <Text style={styles.subtitle}>123456-123456-123456</Text>
                         <View style={{ height: 16 }} />
-                        <Image style={styles.qrCode} source={require('../../../assests/QrCode.png')} />
+                        <Image style={styles.qrCode} source={require('../../assests/QrCode.png')} />
                     </View>
                     <TouchableOpacity style={styles.lightButton} onPress={()=> toggleLight()}>
                         <Icon name={lightOn?"flashlight-on":"flashlight-off"} color="white"/>
@@ -33,7 +33,7 @@ export default function LoyaltyCard() {
             </Card>
             {isOpen &&
                 <TouchableOpacity style={styles.walletButton}>
-                    <Image source={require("../../../assests/GoogleWallet.png")} style={styles.walletIcon} />
+                    <Image source={require("../../assests/GoogleWallet.png")} style={styles.walletIcon} />
                     <View>
                         <Text style={styles.walletText}>Hozzáadás a következőhöz</Text>
                         <Text style={styles.walletHeaderText}>Google Wallet</Text>

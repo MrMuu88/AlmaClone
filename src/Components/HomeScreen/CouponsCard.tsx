@@ -12,7 +12,7 @@ export default function CouponsCard() {
   return (
     <>
       <Card containerStyle={{marginBottom:0, backgroundColor:"#E2E2E2", borderTopRightRadius:8,borderTopLeftRadius:8}}>
-        <Image style={{ height: 200, width: "auto", resizeMode: "contain" }} source={require('../../../assests/couponguy.png')} />
+        <Image style={{ height: 200, width: "auto", resizeMode: "contain" }} source={require('../../assests/couponguy.png')} />
       </Card>
       <Card containerStyle={{marginTop:0, backgroundColor:"#DE486D",borderBottomRightRadius:8,borderBottomLeftRadius:8}}>
         <Text style={{ color:"white", fontWeight:"bold", fontSize:20, marginBottom:16 }}>Ne maradj le az aktuális kuponokról!</Text>
