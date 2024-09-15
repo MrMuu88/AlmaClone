@@ -8,7 +8,7 @@ export const MessagesHeader = (props : StackHeaderProps) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={()=> props.navigation.goBack()}>
-                <Icon name="arrow-forward" size={36} />
+                <Icon name="arrow-back" size={36} color="#57A500"/>
             </TouchableOpacity>
             <View style={{flex:1, justifyContent:"center"}}>
                 <Text style={styles.title}>Üzenetek</Text>
